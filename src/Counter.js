@@ -10,9 +10,20 @@ constructor(props) {
 }
 
 increment (){
-    this.setState({
+  /*   this.setState({
         count : this.state.count + 1
-    },()=>{console.log(`count value = ${this.state.count}`)})
+    },()=>{console.log(`count value = ${this.state.count}`)}) */
+
+    this.setState(prevState => ({
+        count : prevState.count + 1
+    }))
+}
+incrementFive(){
+    this.increment()
+    this.increment()
+    this.increment()
+    this.increment()
+    this.increment()
 }
 
 
@@ -21,7 +32,7 @@ increment (){
             <div>
                 <div>
                     count - {this.state.count}
-                    <button onClick={()=>this.increment()}>Increment - </button>
+                    <button onClick={()=>this.incrementFive()}>Increment - </button>
                 </div>
             </div>
         )
