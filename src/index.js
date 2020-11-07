@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App  from './App';
 import Message from './Message';
+import NameList from './NameList';
 import Welcome from './Welcome';
 import Counter from './Counter';
 import Hello from './TodoItem';
@@ -39,6 +40,7 @@ ReactDOM.render(
   <ClassClick/>
   <EventBind/> 
   <ParentComponent/>
+  <NameList/>
   </div>,
   document.getElementById('checkbox')
 );
