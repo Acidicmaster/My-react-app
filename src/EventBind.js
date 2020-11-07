@@ -6,8 +6,14 @@ constructor(props){
     this.state = {
         message : 'Hello'
     }
+  //  this.clickHander = this.clickHander.bind(this)
 }
-clickHander(){
+// clickHander(){
+//     this.setState({
+//         message : 'Goodbye'
+//     })
+// }
+clickHander = ()=>{
     this.setState({
         message : 'Goodbye'
     })
@@ -19,7 +25,8 @@ clickHander(){
         return (
             <div>
                 <div>{this.state.message}</div>
-                <button onClick={this.clickHander.bind(this)}> Bind</button>
+                {/* <button onClick={this.clickHander.bind(this)}> Bind</button> */}
+                <button onClick={this.clickHander}> Bind</button>
             </div>
         )
     }
