@@ -8,6 +8,7 @@ import Counter from './Counter';
 import Hello from './TodoItem';
 import FunctionClick from './FunctionClick'
 import ClassClick from './ClassClick'
+import EventBind from './EventBind'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -35,6 +36,7 @@ ReactDOM.render(
   <div className="myAp">
   <FunctionClick/>
   <ClassClick/>
+  <EventBind/>
   </div>,
   document.getElementById('checkbox')
 );
