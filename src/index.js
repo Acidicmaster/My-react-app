@@ -9,6 +9,7 @@ import Hello from './TodoItem';
 import FunctionClick from './FunctionClick'
 import ClassClick from './ClassClick'
 import EventBind from './EventBind'
+import ParentComponent from './ParentComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -34,9 +35,10 @@ ReactDOM.render(
 ReactDOM.render(
   // <Ball/>,
   <div className="myAp">
-  <FunctionClick/>
+   <FunctionClick/>
   <ClassClick/>
-  <EventBind/>
+  <EventBind/> 
+  <ParentComponent/>
   </div>,
   document.getElementById('checkbox')
 );
