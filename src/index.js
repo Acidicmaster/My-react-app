@@ -6,6 +6,8 @@ import Message from './Message';
 import Welcome from './Welcome';
 import Counter from './Counter';
 import Hello from './TodoItem';
+import FunctionClick from './FunctionClick'
+import ClassClick from './ClassClick'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -30,8 +32,9 @@ ReactDOM.render(
 
 ReactDOM.render(
   // <Ball/>,
-  <div className="myApp">
-  
+  <div className="myAp">
+  <FunctionClick/>
+  <ClassClick/>
   </div>,
   document.getElementById('checkbox')
 );
