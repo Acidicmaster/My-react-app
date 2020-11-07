@@ -4,6 +4,7 @@ import './index.css';
 import App  from './App';
 import Message from './Message';
 import Welcome from './Welcome';
+import Counter from './Counter';
 import Hello from './TodoItem';
 import reportWebVitals from './reportWebVitals';
 
@@ -20,10 +21,9 @@ ReactDOM.render(
 ReactDOM.render(
   // <Ball/>,
   <div className="myApp">
-  {/* <Hello name="Bruce" />
-  <Hello name="Edu"/>
-  <Hello name="Chioma"/> */}
+  
   <Message/>
+  <Counter/>
   </div>,
   document.getElementById('ball')
 );
