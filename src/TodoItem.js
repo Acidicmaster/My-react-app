@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const Hello = (props) => {
+const Hello = ({name}) => {
  return(
      <div>
-         <h1>HEllo {props.name}</h1>
+         <h1>HEllo {name}</h1>
      </div>
  )
 

@@ -21,11 +21,19 @@ ReactDOM.render(
 ReactDOM.render(
   // <Ball/>,
   <div className="myApp">
-  
+  <Hello name="Test"/>
   <Message/>
   <Counter/>
   </div>,
   document.getElementById('ball')
+);
+
+ReactDOM.render(
+  // <Ball/>,
+  <div className="myApp">
+  
+  </div>,
+  document.getElementById('checkbox')
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
