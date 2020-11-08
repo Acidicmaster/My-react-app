@@ -10,6 +10,7 @@ import Hello from './TodoItem';
 import FunctionClick from './FunctionClick'
 import ClassClick from './ClassClick'
 import EventBind from './EventBind'
+import StyleSheet from './StyleSheet';
 import ParentComponent from './ParentComponent';
 import reportWebVitals from './reportWebVitals';
 
@@ -29,6 +30,7 @@ ReactDOM.render(
   <Hello name="Test"/>
   <Message/>
   <Counter/>
+  <StyleSheet primary={false}/>
   </div>,
   document.getElementById('ball')
 );
