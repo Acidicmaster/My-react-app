@@ -12,14 +12,16 @@ import ClassClick from './ClassClick'
 import EventBind from './EventBind'
 import StyleSheet from './StyleSheet';
 import ParentComponent from './ParentComponent';
+import InLine from './InLine'
+import Form from './Form'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <App />
     <Welcome name="Bruce" heroName='Acidic'/>
   <Welcome name="Edu" heroName='Xtera'/>
-  <Welcome name="Chioma" heroName='Mister'/>
+    <Welcome name="Chioma" heroName='Mister'/> 
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -27,10 +29,11 @@ ReactDOM.render(
 ReactDOM.render(
   // <Ball/>,
   <div className="myApp">
-  <Hello name="Test"/>
+   <Hello name="Test"/>
   <Message/>
   <Counter/>
-  <StyleSheet primary={false}/>
+  <StyleSheet primary={false}/> 
+  <InLine/>
   </div>,
   document.getElementById('ball')
 );
@@ -38,11 +41,12 @@ ReactDOM.render(
 ReactDOM.render(
   // <Ball/>,
   <div className="myAp">
-   <FunctionClick/>
+  <FunctionClick/>
   <ClassClick/>
   <EventBind/> 
   <ParentComponent/>
-  <NameList/>
+  <NameList/> 
+ <Form/>
   </div>,
   document.getElementById('checkbox')
 );
